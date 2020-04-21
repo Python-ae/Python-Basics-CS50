@@ -1,4 +1,5 @@
 # Decorator takes a function as an input return a new function- functional programming  
+#Wrapper function
 
 def announce(f):
     def wrapper():
@@ -7,5 +8,8 @@ def announce(f):
         print("Done with the function.")
     return wrapper
 
+@announce
 def hello():
-    print("Hwllo, world!")
+    print("Hala, world!")
+
+hello()
